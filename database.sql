@@ -5,3 +5,4 @@ CREATE TABLE notif(
   id SERIAL PRIMARY KEY,
   body VARCHAR(255)
 );
+INSERT INTO notif (body) VALUES("First Notification");

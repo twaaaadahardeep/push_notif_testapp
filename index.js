@@ -13,13 +13,11 @@ app.use(express.static(path.join(__dirname, "client")));
 
 app.use(bodyParser.json());
 
-// Store these in env variables. This is a test app
-// so it's stored here
-const publicKey =
-  "BIR5FJf6oSqUmsc1tdHdZXWAUo3QISaJjc7dAFLRA9af4dqbe4fER9VFa0u1x8lFY8sh0NXT5Li2Su03NyQ0vmc";
-const privateKey = "7b3xTpNMctchifRoLjq8l0n8rwebNxRuakh7WTXJ9a8";
-
-webPush.setVapidDetails("mailto:test@test.com", publicKey, privateKey);
+webPush.setVapidDetails(
+  "mailto:test@test.com",
+  process.env.VAPIDPUBLICKEY,
+  process.env.VAPIDPRIVATEKEY
+);
 
 // Subscribe Route
 app.post("/subscribe", async (req, res) => {

@@ -1,5 +1,5 @@
-const publicKey =
-  "BIR5FJf6oSqUmsc1tdHdZXWAUo3QISaJjc7dAFLRA9af4dqbe4fER9VFa0u1x8lFY8sh0NXT5Li2Su03NyQ0vmc";
+// Paste in your publicKey here
+const publicKey = "Your Key Here";
 
 // Check for service worker
 if ("serviceWorker" in navigator) {
