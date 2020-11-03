@@ -1,6 +1,6 @@
 # A Test App which sends Push Notification to the User.
 
-This project uses NodeJS and Postgres.
+This project uses NodeJS and Postgres. It sends a simple push notification whose content is fetched from postgres database.
 
 ### Follow these steps to run this project on your localhost.
 
